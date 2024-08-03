@@ -23,7 +23,7 @@ header{
     width: 100vw;
     height: 200px;
     background-size: cover;
-    /* background-image: url(asset/hyouka.gif); */
+    background-image: url(asset/hyouka.gif);
     background-color: white;
     position: relative;
 }
