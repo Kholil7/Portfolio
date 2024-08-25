@@ -106,3 +106,11 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.04em solid #000}";
     document.body.appendChild(css);
 };
+
+function bright(){
+    var font = document.getElementById("fontCert")
+    font.style.display = 'none';
+    font.style.transition = '0.5s';
+}
+
+// Belajar if else, untuk menggunakan menghilangkan nama saat nilai true dan munculkan lagi saat false. Semangat :)

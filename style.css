@@ -219,11 +219,6 @@ main{
     text-align: justify;
 }
 
-.skill img{
-    width: 150px;
-    margin: auto;
-}
-
 .border{
     padding: 20px 0;
     background: white;
@@ -266,7 +261,7 @@ main{
     border: 1px solid black;
     width: 100%;
     background-color: rgb(195, 158, 251);
-
+    margin-bottom: 50px;
 }
 
 .html-sk{
@@ -293,6 +288,86 @@ main{
     padding: 5px;
 }
 
+
+/* Ini bagian nama cert */
+
+.overlay p{
+    position: relative;
+    z-index: 1;
+    top: 170px;
+    left: 180px;
+    font-size: 30px;
+    color: white;
+    background: red;
+    width: 0;
+}
+
+/* Ini bagian certifikat */
+
+.cert-html{
+    margin-bottom: 100px;
+}
+
+.cert-html img{
+    transition: .5s;
+    width: 460px;
+    margin: auto;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.cert-html img:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -webkit-animation:;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.cert-scroll{
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    width: 460px;
+    float: left;
+    margin-right: 10px;
+}
+
+.deskription{
+    text-align: left;
+}
+
+.slide{
+    top: -70px;
+    width: 460px;
+    height: 55px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(184, 184, 184, 0.567);
+    justify-content: space-evenly;
+}
+
+.slide a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+    padding-top: 10px;
+    filter: drop-shadow(2px 2px 9px black);
+    -webkit-filter: drop-shadow(2px 2px 9px black);
+}
 
 /* Ini bagian contact */
 
@@ -408,7 +483,7 @@ footer p{
 /* ini responsive */
 @media screen and (min-width: 348px){
     .about, .intern, .skill, .contact{
-        width: 90%;
+        width: 85%;
         margin: auto;
     }
     .intern, .skill{
@@ -436,7 +511,25 @@ footer p{
     }
 }
 
-
+@media screen and (max-width: 800px){
+    .cert-scroll{
+        width: 300px;
+    }
+    .cert-scroll img{
+        width: 300px;
+    }
+    .slide{
+        top: -220px;
+        width: 300px;
+    }
+    .overlay p{
+        top: 125px;
+        left: 90px;
+    }
+    .deskription{
+        padding-top: 30px;
+    }
+}
 
 
 /* animasi */
