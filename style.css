@@ -304,8 +304,14 @@ main{
 
 /* Ini bagian certifikat */
 
-.cert-html{
-    margin-bottom: 100px;
+.display-cert{
+    background-color: white;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    padding: 20px;
 }
 
 .cert-html img{
@@ -320,7 +326,35 @@ main{
     -o-transition: .5s;
 }
 
+
+.cert-html-always img{
+    width: 460px;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+
 .cert-html img:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    -webkit-animation:;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.cert-html-always img:hover{
     transition: all .5s;
     transform: scale(1.1);
     filter: brightness(100%);
@@ -350,7 +384,7 @@ main{
 }
 
 .slide{
-    top: -70px;
+    top: -95px;
     width: 460px;
     height: 55px;
     display: flex;

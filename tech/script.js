@@ -113,4 +113,16 @@ function bright(){
     font.style.transition = '0.5s';
 }
 
+function zoomIn(){
+    var rightA = document.getElementById('rightA');
+    rightA.style.width = '480px';
+    rightA.style.transition = '0.5s';
+}
+
+function zoomOut(){
+    var rightA = document.getElementById('rightA');
+    rightA.style.width = '460px';
+    rightA.style.transition = '0.5s';
+}
+
 // Belajar if else, untuk menggunakan menghilangkan nama saat nilai true dan munculkan lagi saat false. Semangat :)
