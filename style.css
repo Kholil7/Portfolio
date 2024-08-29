@@ -304,7 +304,7 @@ main{
 
 /* Ini bagian certifikat */
 
-.display-cert{
+/* .display-cert{
     background-color: white;
     border-radius: var(--border-radius);
     -webkit-border-radius: var(--border-radius);
@@ -312,7 +312,7 @@ main{
     -ms-border-radius: var(--border-radius);
     -o-border-radius: var(--border-radius);
     padding: 20px;
-}
+} */
 
 .cert-html img{
     transition: .5s;
